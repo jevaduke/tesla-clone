@@ -11,17 +11,17 @@ function Header() {
     const cars = useSelector(selectCars)
     return (
         <Container>
-            <a>
+            <a href="/">
                 <img src="/images/logo.svg" alt="Logo"/>
             </a>
             <Menu>
                 {cars && cars.map((car, index) =>(
-                    <a key={index} href="#">{car}</a>
+                    <a key={index} href="/">{car}</a>
                 ))}
             </Menu>
             <RightMenu>
-                <a href='#'>Shop</a>
-                <a href='#'>Tesla Account</a>
+                <a href='/'>Shop</a>
+                <a href='/'>Tesla Account</a>
                 <CustomMenu onClick= {()=>setBurgerStatus(true)}/>
             </RightMenu>
             <BurgerNav show={burgerStatus}>
@@ -29,19 +29,19 @@ function Header() {
                   <Customclose onClick={() =>setBurgerStatus(false)}/>
                 </CloseWrapper>
                 
-                <li><a href="#">Existing Inventory</a></li>
-                <li><a href="#">Used Inventory</a></li>
-                <li><a href="#">Trade-in</a></li>
-                <li><a href="#">Test Drive</a></li>
-                <li><a href="#">Cybertruck</a></li>
-                <li><a href="#">Roadster</a></li>
-                <li><a href="#">Semi</a></li>
-                <li><a href="#">Charging</a></li>
-                <li><a href="#">Powerwall</a></li>
-                <li><a href="#">Commercial Energy</a></li>
-                <li><a href="#">Utilities</a></li>
-                <li><a href="#">Find us</a></li>
-                <li><a href="#">Support</a></li>
+                <li><a href="/">Existing Inventory</a></li>
+                <li><a href="/">Used Inventory</a></li>
+                <li><a href="/">Trade-in</a></li>
+                <li><a href="/">Test Drive</a></li>
+                <li><a href="/">Cybertruck</a></li>
+                <li><a href="/">Roadster</a></li>
+                <li><a href="/">Semi</a></li>
+                <li><a href="/">Charging</a></li>
+                <li><a href="/">Powerwall</a></li>
+                <li><a href="/">Commercial Energy</a></li>
+                <li><a href="/">Utilities</a></li>
+                <li><a href="/">Find us</a></li>
+                <li><a href="/">Support</a></li>
             </BurgerNav>
         </Container>
     )
