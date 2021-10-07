@@ -53,6 +53,7 @@ function Home() {
               backgroundImg= "accessories.jpg"
               leftBtnText="shop now"
             />
+           
         </Container>
     )
 }
@@ -61,3 +62,4 @@ export default Home
 const Container = styled.div`
   height : 100vh;
 `
+

@@ -40,8 +40,8 @@ function Header() {
                 <li><a href="/">Powerwall</a></li>
                 <li><a href="/">Commercial Energy</a></li>
                 <li><a href="/">Utilities</a></li>
-                <li><a href="/">Find us</a></li>
-                <li><a href="/">Support</a></li>
+                <li><a href="/">Dev : Jeva Vignesh</a></li>
+                <li><a href="https://github.com/jevaduke/tesla-clone.git">Project Repo</a></li>
             </BurgerNav>
         </Container>
     )

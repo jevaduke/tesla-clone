@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Fade from 'react-reveal/Fade';
 
-function Section({title,description,leftBtnText,rightBtnText,backgroundImg}) {
+function Section({title,description,leftBtnText,rightBtnText,lastBtnText,backgroundImg}) {
   return (
         <Wrap bgImage={backgroundImg}>
           <Fade bottom>
@@ -21,6 +21,12 @@ function Section({title,description,leftBtnText,rightBtnText,backgroundImg}) {
                       <RightButton>
                         {rightBtnText}
                       </RightButton>
+                  }
+                  {
+                    lastBtnText &&
+                    <LastButton>
+                      {lastBtnText}
+                    </LastButton>
                   }
                   
                </ButtonGroup>
@@ -84,4 +90,10 @@ const DownArrow = styled.img`
 `
 const Buttons = styled.div`
 
+`
+const LastButton = styled(LeftButton)`
+  background-color: #116897;
+  opacity: 0.65;
+  color: white;
+  <a href="https://www.w3schools.com"></a>
 `
